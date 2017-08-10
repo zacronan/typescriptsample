@@ -4,6 +4,7 @@ class Car {
         this.engine = engine;
     }
     start() {
+        var num:number = 2;
         alert('Engine started: ' + this.engine);
     }
     stop() {

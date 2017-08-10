@@ -4,6 +4,7 @@ var Car = (function () {
         this.engine = engine;
     }
     Car.prototype.start = function () {
+        var num = 2;
         alert('Engine started: ' + this.engine);
     };
     Car.prototype.stop = function () {
