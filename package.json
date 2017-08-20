@@ -7,10 +7,15 @@
     "express": "^4.15.4",
     "open": "0.0.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/knockout": "^3.4.44",
+    "@types/node": "^8.0.24"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "watch": "tsc -w",
+    "build": "tsc build"
   },
   "author": "",
   "license": "ISC"
