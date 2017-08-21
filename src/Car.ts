@@ -8,7 +8,7 @@ class Car {
         alert('Engine started: ' + this.engine);
     }
     stop() {
-        alert('Engine stopped: ' + this.engine);   
+        alert('Engine stopped: ' + this.engine);
     }
 }
 
