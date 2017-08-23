@@ -10,3 +10,4 @@ var demo_02_03;
     };
     console.log(person);
 })(demo_02_03 || (demo_02_03 = {}));
+//# sourceMappingURL=dynamic-types.js.map
