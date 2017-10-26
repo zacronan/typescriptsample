@@ -15,12 +15,16 @@ class CalculatorJQuery {
     }
 
     wireEvents() {
+        // @ts-ignore 
         $('Add').click('click', 
             event => {
+                // @ts-ignore 
                 this.output.html(this.add(parseInt(this.x.value), parseInt(this.y.value)).toString());
             });
+        // @ts-ignore 
         $('Subtract').click('click', 
             event => {  
+                // @ts-ignore 
                 this.output.html(this.subtract(parseInt(this.x.value), parseInt(this.y.value)).toString());
             });
     }

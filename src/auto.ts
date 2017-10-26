@@ -60,11 +60,27 @@ class Auto {
     }
 }
 class Trunk extends Auto {
-    
+    bedLength: string;
+    fourByFour: boolean;
+    constructor(basePrice: number, engine:  AutoEngine, make: string, model: string, bedLength: string, fourByFour: boolean) {
+        super(basePrice, engine, make, model);
+        this.bedLength = bedLength;
+        this.fourByFour = fourByFour;
+    }
 }
 
 
 window.onload = function () {
-    var auto = new Auto(40000, new AutoEngine(300, 'V8'), 'Chevy', 'Silverado');
-    alert(auto.engine.engineType);
+    var truck = new Trunk(40000, new AutoEngine(300, 'V8'), 'Chevy', 'Silverado', 'Long Bed', true);
+    // alert(truck.engine.engineType);
+    // alert(truck.bedLength);
+    // alert(truck.calculateTotal().toString());
+    truck.addAccessories(
+        new Accessory(10, "Film"),
+        new Accessory(12, "Sunroof"),
+        new Accessory(13, "RainbowLight")
+    );
+    truck.engine.start((status: boolean, engineType: string) => {
+        alert(engineType + ' was started');
+    });
 }
