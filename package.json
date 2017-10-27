@@ -10,9 +10,11 @@
     "build": "tsc build"
   },
   "dependencies": {
+    "@types/toastr": "^2.1.35",
     "express": "^4.16.2",
     "nodemon": "^1.12.1",
     "open": "0.0.5",
+    "toastr": "^2.1.2",
     "tslint": "^5.8.0"
   },
   "author": "",
